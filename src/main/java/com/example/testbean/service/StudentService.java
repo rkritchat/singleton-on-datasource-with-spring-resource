@@ -31,7 +31,7 @@ public class StudentService {
                 return rs.getString("name");
             }
         }catch (Exception exception){
-            System.out.println(exception);
+            System.out.println("error : " + exception);
         }finally {
             if(connection!=null) connection.close();
             if(ps!=null) ps.close();
