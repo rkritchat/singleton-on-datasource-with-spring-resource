@@ -30,8 +30,8 @@ public class StudentService {
             if (rs.next()) {
                 return rs.getString("name");
             }
-        }catch (Exception e){
-            System.out.println(e);
+        }catch (Exception exception){
+            System.out.println(exception);
         }finally {
             if(connection!=null) connection.close();
             if(ps!=null) ps.close();
